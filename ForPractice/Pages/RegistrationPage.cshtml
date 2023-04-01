@@ -1,0 +1,42 @@
+﻿@page
+@model ForPractice.Pages.RegistrationPageModel
+@{
+}
+
+@if(HttpContext.Session.Keys.Count() == 0)
+{
+    <div class="loginmain">
+        <div class="form-wrapper">
+            <div class="form-wrapper__card">
+                <form method="post">
+                    <div class="form-group d-flex flex-column">
+                        <label for="nameId">Write your name:</label>
+                        <input id="nameId" name="name" type="text" />
+                    </div>
+                    <div class="form-group d-flex flex-column">
+                        <label for="nicknameId">Write your nickname:</label>
+                        <input id="nicknameId" name="nickname" type="text"/>
+                    </div>
+                    <div class="form-group d-flex flex-column">
+                        <label for="passwordId">Write your password:</label>
+                        <input id="passwordId" name="password" type="password"/>
+                    </div>
+                    <div class="form-group d-flex flex-column">
+                        <label for="reppasswdId">Repeat your password:</label>
+                        <input id="reppasswdId" name="reppasswd" type="password"/>
+                    </div>
+                    <button class="btn btn-outline-dark" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+        <div class="coluns" >
+            <h1>ROAD TO THE DREAM</h1>
+            <video src="~/images/2.mp4" autoplay="autoplay" controls="controls"></video>
+        </div>
+    </div>
+} else {
+    <div class="container-fluid d-flex justify-content-center">
+        <h1 class="text-message">You are looged in</h1>
+    </div>
+}
+

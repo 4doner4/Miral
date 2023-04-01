@@ -1,0 +1,99 @@
+﻿@page
+@model IndexModel
+@using Microsoft.AspNetCore.Session
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <div class="textmain">
+        <div class="raw"><br /> <br />  <h1>Добро пожаловать в мир волшебных приключений!</h1> 
+            <h4>
+            Никакая ощутимая, реальная прелесть не может сравниться с тем, что способен накопить человек в глубинах своей фантазии.  
+            </h4>
+            <h5>Чтение всего и вся без предрасудков и делений</h5>
+        </div>
+        <img class="mainimage raw" src="~/images/66 1.png" /> 
+</div>  
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+          <a class="" asp-area="" asp-page="/Index">
+      <img src="~/images/фон клинок.jpg" class="d-block w-100 sized " alt="...">
+      <div class="carousel-caption d-none d-md-block">
+          <img src="~/images/клинок.jpg" class="imagescarusel"/>
+        <h5>Клинок, рассекающий демонов</h5>
+        <p>Танджиро - старший сын в семье, потерявшей кормильца.<br /> Однажды он уходит в другой город, чтобы продать древесный уголь, но в конце концов остаётся на ночь в чужом доме, вместо того, чтобы идти домой.<br /> А всё из-за слухов о демоне, который разгуливает в горах под покровом ночи. <br />Утром парень вернётся домой живой и невредимый...<br /> Но его ждут ужасные известия....</p>
+      </div>
+          </a>
+    </div>
+    <div class="carousel-item">
+          <a class="" asp-area="" asp-page="/Index">
+      <img src="~/images/637119_original.jpg" class="d-block w-100 sized" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+          <img src="~/images/1.jpg" class="imagescarusel"/>
+        <h5>Ход королевы</h5>
+        <p>«Ход королевы» рассказывает историю шахматного вундеркинда-сироты Бет Хармон,<br /> которая стремится стать величайшей шахматисткой мира,<br /> но при этом борется с эмоциональными проблемами, а также с наркотической и алкогольной зависимостью.</p>
+      </div>
+          </a>
+    </div>
+    <div class="carousel-item">
+          <a class="" asp-area="" asp-page="/Index">
+      <img src="~/images/002-1.jpg" class="d-block w-100 sized" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+          <img src="~/images/7ei8hn61y71f_250x350.jpg" class="imagescarusel"/>
+        <h5>О моём перерождении в слизь</h5>
+        <p>37-летний японец-холостяк был зарезан на улице каким-то мерзавцем-грабителем.<br /> Тут бы и истории конец, да всё обернулось иначе, неожиданно он переродился слизью в фэнтезийном мире.<br /> Но что может сделать, пускай и разумная, но слизь?</p>
+      </div>
+          </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+
+<div class="gridcontainer">
+    <a class="" asp-area="" asp-page="/Index">
+        <div class="col">
+            <h4>Тевис У.: Ход королевы</h4>
+            <img class="sized" src="~/images/1.jpg" /> 
+        </div>
+    </a>
+       <a class="" asp-area="" asp-page="/Index">
+        <div class="col">
+            <h4>Белфорт Дж.: Метод волка с Уолл-стрит</h4>
+            <img class="sized" src="~/images/2.jpg" /> 
+        </div>
+    </a>
+       <a class="" asp-area="" asp-page="/Index">
+        <div class="col">
+            <h4>Киз Д.: Цветы для Элджернона</h4>
+            <img class="sized" src="~/images/3.jpg" /> 
+        </div>
+    </a>
+       <a class="" asp-area="" asp-page="/Index">
+        <div class="col">
+            <h4>Робертс Г. Д. : Шантарам</h4>
+            <img class="sized" src="~/images/4.jpg" /> 
+        </div>
+    </a>
+       <a class="" asp-area="" asp-page="/Index">
+        <div class="col">
+            <h4>Кристи А.: Убийство Роджера Экройда. Любимая коллекция</h4>
+            <img class="sized" src="~/images/5.jpg" /> 
+        </div>
+    </a>
+</div>
+</div>
